@@ -50,5 +50,5 @@ void write_ppm(const char *filename, Image img) {
 }
 
 int main(int argc, char *argv[]) {
-    invert_colors(argv[1]);
+  write_ppm("output.ppm", invert_colors(read_ppm(argv[1])));
 }
